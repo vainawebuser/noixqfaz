@@ -1,0 +1,36 @@
+*{margin-left:0; margin-right:0;}
+body{
+	width: 100%;
+}
+header{
+	background: red;
+}
+.block__menu{
+	font-family: FreeSans;
+	font-size: 26px;
+	display: flex;
+	justify-content: center; 
+	background: blue;
+	margin-top:2%;
+}
+.nav__menu{
+	background:cyan;
+	margin-left:29%; 
+	margin-right:29%;
+}
+.ul__menu{
+	list-style-type: none;
+	display:flex;
+	flex-direction:row;	  
+}
+.li a{
+	color: rgb(255, 255, 255);
+	text-decoration:none;
+	font-weight: bold;  
+ 	padding:20px;
+ 	line-height: 31.2px;
+	letter-spacing: 0.04em;
+}
+main{
+
+}
