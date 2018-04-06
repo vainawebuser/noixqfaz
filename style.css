@@ -1,6 +1,7 @@
 *{margin-left:0; margin-right:0;}
 body{
 	width: 100%;
+	
 }
 header{
 	background: red;
@@ -30,6 +31,52 @@ header{
  	padding:20px;
  	line-height: 31.2px;
 	letter-spacing: 0.04em;
+}
+.li__yellow a{
+	color: rgb(255, 255, 0);
+}
+.li__black a{
+	color: rgb(0, 0, 0);
+}
+.section__textograffiti{
+	display: flex;
+	align-items: center;
+	width: 61%;
+	background-color: yellow
+}
+.block__textograffiti{
+	width: 34%;
+	height: 3%;
+	margin-left: 17%;
+	background-color: blue;
+}
+.p__textograffiti{
+	font-family: 'Modesto';
+    src: url('Modesto-Bold.eot');
+    src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Modesto-Bold.woff2') format('woff2'),
+        url('Modesto-Bold.woff') format('woff'),
+        url('Modesto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+	font-size: 16px;
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 0em;
+
+}
+.section_imglogo{
+	width: 30%;
+}
+.block__imglogo{
+	background-color: white;
+	margin-right: 27%;
+}
+.imglogo{
+	width: 13%;
+	height: 4%;
 }
 main{
 
