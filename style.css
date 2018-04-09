@@ -1,91 +1,83 @@
-*{margin-left:0; margin-right:0; margin-top:0;}
+*{margin: 0;}
 body{
 	
 	
 }
 header{
-	background: url(Assets/Capa.jpg) no-repeat 100% center; 
+	background: url(Assets/Capa.jpg) no-repeat center ; 
 	height: 100vh;
-}
-.block__menu{
-	font-family: FreeSans;
-	font-size: 26px;
+	background-size: 100%;
 	display: flex;
-	justify-content: center; 
-	background: blue;
+	flex-direction: row;
+	align-items: flex-end; 
 }
 .nav__menu{
-	background:;
-	margin-top:2%;
-	margin-left:29%; 
-	margin-right:29%;
+	width: 100%;
+	margin: 0 29%;
+	margin-top: 2%;
+	background:transparent;
+	position: fixed;
+	top:0;
+	z-index: 99;
 }
-.ul__menu{
-	list-style-type: none;
-	display:flex;
-	flex-direction:row;	  
-}
-.li a{
+.nav__item{
 	color: rgb(255, 255, 255);
-	text-decoration:none;
+	font-family: FreeSans;
+	font-size: 26px;
+	text-decoration: none;
 	font-weight: bold;  
  	padding:20px;
  	line-height: 31.2px;
 	letter-spacing: 0.04em;
 }
-.li__yellow a{
-	color: rgb(216, 223, 33);
-}
-.li__black a{
-	color: rgb(0, 0, 0);
-}
-.section__texto--img{
-	display: flex;
-	align-items: center;
-	justify-content: space-between; 
-	margin-top:15%; 
-}
+
 .section__textograffiti{
 	width: 61%;
-	background:url(Assets/HomeLaranja.svg) ;
-}
-.block__textograffiti{
-	width: 34%;
-	height: 3%;
-	margin-left: 17%;
-	background-color: blue;
+	height: 367px;
+	margin-left: 5%;
+	background: url(Assets/HomeLaranja.svg) no-repeat center bottom;
+	background-size: 100%;
+	position: relative; 
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 .p__textograffiti{
+	width: 56%;
+	margin-bottom: 60px;
+    font-weight: bold;
+    font-style: normal;
+	font-size: 16px;
+	font-style: normal;
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 0em;
+	
+
+
 	font-family: 'Modesto';
     src: url('Modesto-Bold.eot');
     src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
         url('Modesto-Bold.woff2') format('woff2'),
         url('Modesto-Bold.woff') format('woff'),
         url('Modesto-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-	font-size: 16px;
-	color: rgb(0, 0, 0);
-	font-style: normal;
-	text-align: left;
-	line-height: 30px;
-	letter-spacing: 0em;
-
 }
-.section_imglogo{
+.section__imglogo{
 	width: 30%;
-	background: red;
-}
-.block__imglogo{
-	margin-right: 27%;
-	background-color: yellow;
-	height: 30%;
+	height: 235px;
+	background: url(Assets/HomeCinza.svg) no-repeat center bottom;
+	background-size: 100%;
+	position: relative;
+	left: -150px;
+	z-index: 1;
 	display: flex;
 	justify-content: center;
+	align-items: flex-end;
 }
 .imglogo{
-	width: 13%;
-	height: 4%;
+	width: 45%;
+	margin-bottom: 20px;
 }
 main{
 	
@@ -96,7 +88,7 @@ main{
 
 }
 .block__umgrupo{
-	margin-top: 8%;
+	padding-top: 10%;
 	margin-right: 24%;
 	margin-left: 23%;
 	width: 53%;
@@ -121,7 +113,7 @@ main{
 .section__ação2{
 	background: rgb(216, 223, 33);
 }
-.section__ação2texto{
+.section__ação2--texto{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -129,7 +121,7 @@ main{
 .block__ação2{
 	width: 35%;
 	height: 3%;
-	margin-top: 5%;
+	margin-top: 9%;
 }
 .h2__ação2{
 	font-family: 'Modesto';
@@ -166,19 +158,32 @@ main{
 	margin-right: 22%;
 	margin-left: 22%;
 }
-.imgação2{
-
-}
 .section__contato{
-	margin-top: 4%;
-	margin-left: 17%;
-	margin-right: 18%;
+	background: transparent;
 	display: flex;
 	justify-content: center;
-	background: url(Assets/Contato.svg);
-	width: 64%;
-	height: 20%;
+	align-items: center;
+	background:rgb(157, 0, 93) url(Assets/Contato.svg) no-repeat center;
+	height: 100vh;
+
 }
 .block__contato{
-	
+	font-family: 'Modesto';
+    src: url('Modesto-Bold.eot');
+    src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Modesto-Bold.woff2') format('woff2'),
+        url('Modesto-Bold.woff') format('woff'),
+        url('Modesto-Bold.ttf') format('truetype');
+    font-weight: bold; 
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-align: left;
+	line-height: 31.7px;
+	letter-spacing: 0.06em;
+}
+.block__contato a{
+	color: rgb(0, 0, 0);
+	text-decoration:none;  
+ 	line-height: 31.2px;
 }
