@@ -11,6 +11,11 @@ header{
 	flex-direction: row;
 	align-items: flex-end; 
 }
+@media(max-width: 640px){
+	header{
+		background-color:red; 
+	}
+}
 .nav__menu{
 	width: 100%;
 	margin: 0 29%;
@@ -19,6 +24,15 @@ header{
 	position: fixed;
 	top:0;
 	z-index: 99;
+}
+@media(max-width: 640px){
+	.nav__menu{
+		background-color: red;
+		margin-left:2%;
+		margin-right:2%;
+		margin-top: 2%;
+
+	}
 }
 .nav__item{
 	color: rgb(255, 255, 255);
@@ -30,7 +44,17 @@ header{
  	line-height: 31.2px;
 	letter-spacing: 0.04em;
 }
-
+@media(max-width: 640px){
+	.nav__item{
+		padding:10px; 
+		font-size: 17px;
+		color: rgb(0, 0, 0);
+		font-style: normal;
+		text-align: center;
+		line-height: 20.4px;
+		letter-spacing: 0.04em;
+	}
+}
 .section__textograffiti{
 	width: 61%;
 	height: 367px;
@@ -43,6 +67,15 @@ header{
 	justify-content: center;
 	align-items: flex-end;
 }
+@media(max-width: 640px){
+	.section__textograffiti{
+		background:url(Assets/mobile-header-laranja.svg) no-repeat bottom;
+		background:yellow; 
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+}
 .p__textograffiti{
 	width: 56%;
 	margin-bottom: 60px;
@@ -53,15 +86,6 @@ header{
 	text-align: left;
 	line-height: 30px;
 	letter-spacing: 0em;
-	
-
-
-	font-family: 'Modesto';
-    src: url('Modesto-Bold.eot');
-    src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Modesto-Bold.woff2') format('woff2'),
-        url('Modesto-Bold.woff') format('woff'),
-        url('Modesto-Bold.ttf') format('truetype');
 }
 .section__imglogo{
 	width: 30%;
@@ -74,6 +98,16 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+}
+@media(max-width: 640px){
+	.section__imglogo{
+		background:url(Assets/mobile-header-cinza.svg) ;
+		z-index:99; 
+		position:relative;
+		top:0;
+		display: flex;
+		justify-content: center;
+	}
 }
 .imglogo{
 	width: 45%;
@@ -95,12 +129,6 @@ main{
 	height: 10%;
 }
 .p__textoumgrupo{
-	font-family: 'Modesto';
-    src: url('Modesto-Bold.eot');
-    src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Modesto-Bold.woff2') format('woff2'),
-        url('Modesto-Bold.woff') format('woff'),
-        url('Modesto-Bold.ttf') format('truetype');
     font-weight: bold; 
 	font-size: 20px; 
 	color: rgb(255, 255, 255); 
@@ -124,12 +152,6 @@ main{
 	margin-top: 9%;
 }
 .h2__ação2{
-	font-family: 'Modesto';
-    src: url('Modesto-Bold.eot');
-    src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Modesto-Bold.woff2') format('woff2'),
-        url('Modesto-Bold.woff') format('woff'),
-        url('Modesto-Bold.ttf') format('truetype');
     font-weight: bold; 
 	font-size: 26px; 
 	color: rgb(0, 113, 187); 
@@ -139,12 +161,6 @@ main{
 	letter-spacing: 0em;
 }
 .p__ação2{
-	font-family: 'Modesto';
-    src: url('Modesto-Bold.eot');
-    src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Modesto-Bold.woff2') format('woff2'),
-        url('Modesto-Bold.woff') format('woff'),
-        url('Modesto-Bold.ttf') format('truetype');
     font-weight: bold; 
 	font-size: 18px; 
 	color: rgb(0, 0, 0); 
@@ -153,10 +169,16 @@ main{
 	line-height: 38px; 
 	letter-spacing: 0em;
 }
-.block__imgação2{
-	margin-top: 7%;
-	margin-right: 22%;
-	margin-left: 22%;
+.imgação2{
+	width: 55%;
+	height: 16%;
+	margin: 7% auto;
+	margin-bottom: 0;
+}
+@media(max-width: 640px){
+	.imgação2{
+		width: 100%;
+	}
 }
 .section__contato{
 	background: transparent;
@@ -168,12 +190,6 @@ main{
 
 }
 .block__contato{
-	font-family: 'Modesto';
-    src: url('Modesto-Bold.eot');
-    src: url('Modesto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Modesto-Bold.woff2') format('woff2'),
-        url('Modesto-Bold.woff') format('woff'),
-        url('Modesto-Bold.ttf') format('truetype');
     font-weight: bold; 
 	font-size: 20px;
 	color: rgb(0, 0, 0);
