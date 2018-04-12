@@ -13,7 +13,12 @@ header{
 }
 @media(max-width: 640px){
 	header{
-		background-color:red; 
+		background: url(Assets/Capa.jpg) no-repeat center;
+		background-size: 100%;
+		background-position: 50% 35%;
+		height: 800px; 
+		display: flex;
+		flex-direction: column;
 	}
 }
 .nav__menu{
@@ -27,10 +32,10 @@ header{
 }
 @media(max-width: 640px){
 	.nav__menu{
-		background-color: red;
-		margin-left:2%;
-		margin-right:2%;
-		margin-top: 2%;
+		/*background-color: red;*/
+		margin-left:4%;
+		margin-right:0;
+		margin-top: 4%;
 
 	}
 }
@@ -55,9 +60,31 @@ header{
 		letter-spacing: 0.04em;
 	}
 }
+@media(max-width: 640px){
+	.section__imglogo__mobile{
+		background: url(Assets/mobile-header-cinza.svg) no-repeat;
+		background-size: 100%;
+		width: 400px;
+		height: 400px;
+	}
+}
+.imglogo__mobile{
+	display: none;
+}
+@media(max-width: 640px){
+	.imglogo__mobile{
+		display: inline;
+		/*background-color: yellow;*/
+		height: 50%;
+		width: 50%;
+		margin-top: 20%;
+		/*padding-right:4%;*/
+		margin-left: 40%; 
+	}
+}
 .section__textograffiti{
 	width: 61%;
-	height: 367px;
+	height: 390px;
 	margin-left: 5%;
 	background: url(Assets/HomeLaranja.svg) no-repeat center bottom;
 	background-size: 100%;
@@ -70,10 +97,10 @@ header{
 @media(max-width: 640px){
 	.section__textograffiti{
 		background:url(Assets/mobile-header-laranja.svg) no-repeat bottom;
-		background:yellow; 
+		/*background:yellow; */
+		background-size: 100%;
 		width: 100%;
 		height: 100%;
-		margin: 0;
 	}
 }
 .p__textograffiti{
@@ -87,9 +114,20 @@ header{
 	line-height: 30px;
 	letter-spacing: 0em;
 }
+@media(max-width: 640px){
+	.p__textograffiti{
+		font-size: 18px;
+		color: rgb(0, 0, 0);
+		font-style: normal;
+		text-align: left;
+		line-height: 30px;
+		letter-spacing: 0em;
+		width:290px; 
+	}
+}
 .section__imglogo{
 	width: 30%;
-	height: 235px;
+	height: 250px;
 	background: url(Assets/HomeCinza.svg) no-repeat center bottom;
 	background-size: 100%;
 	position: relative;
@@ -101,12 +139,7 @@ header{
 }
 @media(max-width: 640px){
 	.section__imglogo{
-		background:url(Assets/mobile-header-cinza.svg) ;
-		z-index:99; 
-		position:relative;
-		top:0;
-		display: flex;
-		justify-content: center;
+		display: none;
 	}
 }
 .imglogo{
