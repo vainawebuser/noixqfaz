@@ -14,7 +14,7 @@ header{
 @media(max-width: 640px){
 	header{
 		background: url(Assets/Capa.jpg) no-repeat center;
-		background-size: 100%;
+		background-size: 650px;
 		background-position: 50% 35%;
 		height: 800px; 
 		display: flex;
@@ -32,10 +32,9 @@ header{
 }
 @media(max-width: 640px){
 	.nav__menu{
-		/*background-color: red;*/
 		margin-left:4%;
 		margin-right:0;
-		margin-top: 4%;
+		margin-top: 7%;
 
 	}
 }
@@ -51,7 +50,7 @@ header{
 }
 @media(max-width: 640px){
 	.nav__item{
-		padding:10px; 
+		padding:8px; 
 		font-size: 17px;
 		color: rgb(0, 0, 0);
 		font-style: normal;
@@ -64,7 +63,7 @@ header{
 	.section__imglogo__mobile{
 		background: url(Assets/mobile-header-cinza.svg) no-repeat;
 		background-size: 100%;
-		width: 400px;
+		width: 100%;
 		height: 400px;
 	}
 }
@@ -74,11 +73,9 @@ header{
 @media(max-width: 640px){
 	.imglogo__mobile{
 		display: inline;
-		/*background-color: yellow;*/
 		height: 50%;
 		width: 50%;
 		margin-top: 20%;
-		/*padding-right:4%;*/
 		margin-left: 40%; 
 	}
 }
@@ -154,12 +151,28 @@ main{
 	background: rgb(0, 113, 187);
 
 }
+@media(max-width: 640px){
+	.section__umgrupo{
+		height: 100%;
+	}
+}
 .block__umgrupo{
 	padding-top: 10%;
 	margin-right: 24%;
 	margin-left: 23%;
 	width: 53%;
 	height: 10%;
+}
+@media(max-width: 640px){
+	.block__umgrupo{
+	width:75%; 	
+	margin-left: 0;
+	margin-right: 0;  	
+	margin-bottom:0;
+	padding-left:13%; 
+	padding-top:25%;
+	padding-bottom:25%;   
+	}
 }
 .p__textoumgrupo{
     font-weight: bold; 
@@ -171,6 +184,16 @@ main{
 	letter-spacing: 0em;
 
 }
+@media(max-width: 640px){
+	.p__textoumgrupo{
+		font-size: 18px;
+		color: rgb(255, 255, 255);
+		font-style: normal;
+		text-align: left;
+		line-height: 30px;
+		letter-spacing: 0em;
+	}
+}
 .section__ação2{
 	background: rgb(216, 223, 33);
 }
@@ -179,10 +202,36 @@ main{
 	align-items: center;
 	flex-direction: column;
 }
+.block__ação1{
+	display: none;
+}
+@media(max-width: 640px){
+	.block__ação1{
+		display: inline;
+		width: 76%; 
+		padding-top: 20%;
+	}
+}
+.imgação1{
+	display: none;
+}
+@media(max-width: 640px){
+	.imgação1{
+		display:inline;
+		width: 100%; 
+		padding-top: 15%; 
+	}
+}
 .block__ação2{
 	width: 35%;
 	height: 3%;
 	margin-top: 9%;
+}
+@media(max-width: 640px){
+	.block__ação2{
+		width: 75%; 
+		padding-top: 5%; 
+	}
 }
 .h2__ação2{
     font-weight: bold; 
@@ -192,6 +241,11 @@ main{
 	text-align: left; 
 	line-height: 38px; 
 	letter-spacing: 0em;
+}
+@media(max-width: 640px){
+	.h2__ação2{
+		padding-bottom: 5%;
+	}
 }
 .p__ação2{
     font-weight: bold; 
@@ -211,6 +265,27 @@ main{
 @media(max-width: 640px){
 	.imgação2{
 		width: 100%;
+		padding-top: 5%;
+	}
+}
+.block__ação3{
+	display: none;
+}
+@media(max-width: 640px){
+	.block__ação3{
+		display: inline;
+		width: 75%; 
+		padding-top: 20%;
+	}
+}
+.imgação3{
+	display: none;
+}
+@media(max-width: 640px){
+	.imgação3{
+		display:inline;
+		width: 100%; 
+		padding-top: 15%; 
 	}
 }
 .section__contato{
@@ -222,6 +297,13 @@ main{
 	height: 100vh;
 
 }
+@media(max-width: 640px){
+	.section__contato{
+		background:rgb(157, 0, 93) url(Assets/Mobile-Contato.svg) no-repeat bottom;
+		background-size: 1050px;
+		background-position-y: 0px;
+	}
+}
 .block__contato{
     font-weight: bold; 
 	font-size: 20px;
@@ -230,6 +312,18 @@ main{
 	text-align: left;
 	line-height: 31.7px;
 	letter-spacing: 0.06em;
+}
+@media(max-width: 640px){
+	.block__contato{
+		padding-top: 90%;
+		font-weight: bold; 
+		font-size: 20px;
+		color: rgb(0, 0, 0);
+		font-style: normal;
+		text-align: left;
+		line-height: 31.7px;
+		letter-spacing: 0.01em; 
+	}
 }
 .block__contato a{
 	color: rgb(0, 0, 0);
