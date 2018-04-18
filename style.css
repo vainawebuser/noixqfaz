@@ -39,15 +39,21 @@ header{
 	}
 }
 .nav__item{
+ 	padding:20px;
 	color: rgb(255, 255, 255);
-	font-family: FreeSans;
+	font-family:"industry-inc-stencil";
+	font-style:normal;
+	font-weight:400;
 	font-size: 26px;
 	text-decoration: none;
-	font-weight: bold;  
- 	padding:20px;
- 	text-align: center;
  	line-height: 31.2px;
 	letter-spacing: 0.04em;
+}
+.nav__item--action{
+
+}
+.nav__item--mobile{
+	display: none
 }
 @media(max-width: 640px){
 	.nav__item{
@@ -57,6 +63,13 @@ header{
 		font-style: normal;
 		text-align: center;
 		line-height: 20.4px;
+		letter-spacing: 0.04em;
+	}
+	.nav__item--action{
+		display: none;
+	}
+	.nav__item--mobile{
+		display: block;
 	}
 }
 @media(max-width: 640px){
@@ -94,8 +107,6 @@ header{
 }
 @media(max-width: 640px){
 	.section__textograffiti{
-		padding-top: 90px;
-		margin: 0;
 		width: 100%;
 		height: 500px;
 		background:url(Assets/mobile-header-laranja.svg) no-repeat bottom;
@@ -118,8 +129,8 @@ header{
 }
 @media(max-width: 640px){
 	.p__textograffiti{
-		width:300px;
-		margin-top: 40px; 
+		width:290px;
+		margin-top: 20px; 
 		margin-bottom: 0; 
 		font-size: 18px;
 		color: rgb(0, 0, 0);
@@ -191,49 +202,84 @@ main{
 @media(max-width: 640px){
 	.p__textoumgrupo{
 		font-size: 18px;
+		color: rgb(255, 255, 255);
 		line-height: 30px;
 	}
 }
 .section__ação2{
+	width: 100%; 
 	background: rgb(216, 223, 33);
+	position: relative;
 }
-.section__ação2--texto{
-	display: flex;
+.section__ação2--mobile{
+	width: 100%; 
+	background: rgb(216, 223, 33);
+	position: relative;
+	display: none
+}
+@media(max-width: 640px){
+	.section__ação2{
+		display: none;
+	}
+	.section__ação2--mobile{
+		display: block;
+	}
+}
+.action__btn{
+	width: 8%;
+	height: 40vh;
+	background:transparent;
+	border:none;
+	position: absolute;
+}
+.action__btn:focus{
+	outline: none;
+}
+.action__btn--left{
+	top:40%;
+	left:10%;
+	z-index: 1;
+}
+.action__btn--right{
+	top: 40%;
+	right:10%;
+	z-index: 1;
+}
+.actionBtn__image{
+
+}
+@media(max-width: 640px){
+	.action__btn{
+		display: none;
+	}
+}
+.block__ação{
+	min-width: 60%;
+	padding-top: 5%;
+	margin:0 20%; 
+	/*display: flex;*//* Display controlado pelo js */
+	flex-direction: column;	
 	align-items: center;
-	flex-direction: column;
 }
-.block__ação1{
-	display: none;
-}
-@media(max-width: 640px){
-	.block__ação1{
-		display: inline;
-		width: 76%; 
-		padding-top: 20%;
-	}
-}
-.imgação1{
-	display: none;
+.block__ação--mobile{
+	min-width: 60%;
+	padding-top: 5%;
+	margin:0 20%; 
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
 }
 @media(max-width: 640px){
-	.imgação1{
-		display:inline;
+	/*.block__ação{
+	}*/
+	.block__ação--mobile{
 		width: 100%; 
-		padding-top: 15%; 
+		padding-top: 20%;
+		margin:0;
 	}
 }
-.block__ação2{
-	width: 35%;
-	height: 3%;
-	margin-top: 9%;
-}
-@media(max-width: 640px){
-	.block__ação2{
-		width: 75%; 
-		padding-top: 5%; 
-	}
-}
-.h2__ação2{ 
+.h2__ação{ 
+	width: 75%;
 	font-family:"modesto-text";
 	font-style:normal;
 	font-weight:700;
@@ -244,11 +290,12 @@ main{
 	letter-spacing: 0em;
 }
 @media(max-width: 640px){
-	.h2__ação2{
+	.h2__ação{
 		padding-bottom: 5%;
 	}
 }
-.p__ação2{ 
+.p__ação{ 
+	width: 75%;
 	font-family:"modesto-text";
 	font-style:normal;
 	font-weight:700;
@@ -258,40 +305,17 @@ main{
 	line-height: 38px; 
 	letter-spacing: 0em;
 }
-.imgação2{
-	width: 55%;
-	height: 16%;
-	margin: 7% auto;
-	margin-bottom: 0;
+.imgação{
+	width: 100%;
 }
 @media(max-width: 640px){
-	.imgação2{
-		width: 100%;
-		padding-top: 5%;
-	}
-}
-.block__ação3{
-	display: none;
-}
-@media(max-width: 640px){
-	.block__ação3{
-		display: inline;
-		width: 75%; 
-		padding-top: 20%;
-	}
-}
-.imgação3{
-	display: none;
-}
-@media(max-width: 640px){
-	.imgação3{
-		display:inline;
-		width: 100%; 
+	.imgação{
 		padding-top: 15%; 
 	}
 }
+
 #CONTATO{
-	height: 100vh;
+	min-height: 150vh;
 	background:rgb(157, 0, 93) url(Assets/Contato.svg) no-repeat center;
 	display: flex;
 	justify-content: center;
@@ -324,4 +348,29 @@ main{
 	color: rgb(0, 0, 0);
 	text-decoration:none;  
  	line-height: 31.2px;
+}
+/*footer Vai na Web */
+
+.vnw{ 
+    height: 40px;
+	background: #f16337;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.vnw__text{
+    font-family: 'filson-soft', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+    color: #30368c;
+}
+@media (max-width: 768px){
+	.vnw__text{
+        font-size: 12px;
+    }
 }
