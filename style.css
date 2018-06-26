@@ -96,7 +96,7 @@ header{
 	}
 }
 .section__textograffiti{
-	width: 61%;
+	min-width: 61%;
 	max-width: 800px;
 	height: 390px;
 	margin-left: 5%;
@@ -142,7 +142,7 @@ header{
 	}
 }
 .section__imglogo{
-	width: 30%;
+	min-width: 30%;
 	max-width: 400px;
 	height: 250px;
 	background: url(Assets/HomeCinza.svg) no-repeat center bottom;
