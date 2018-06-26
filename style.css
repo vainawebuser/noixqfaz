@@ -1,14 +1,14 @@
 *{margin: 0;}
 body{
 	
-	
 }
 header{
-	background: url(Assets/Capa.jpg) no-repeat center ; 
 	height: 100vh;
-	background-size: 100%;
+	background: url(Assets/Capa.jpg) no-repeat center ; 
+	background-size: cover;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: flex-end; 
 }
 @media(max-width: 640px){
@@ -23,12 +23,14 @@ header{
 }
 .nav__menu{
 	width: 100%;
-	margin: 0 29%;
+	/*margin: 0 29%;*/
 	margin-top: 2%;
 	background:transparent;
 	position: fixed;
 	top:0;
 	z-index: 99;
+	display: flex;
+	justify-content: center;
 }
 @media(max-width: 640px){
 	.nav__menu{
@@ -95,6 +97,7 @@ header{
 }
 .section__textograffiti{
 	width: 61%;
+	max-width: 800px;
 	height: 390px;
 	margin-left: 5%;
 	background: url(Assets/HomeLaranja.svg) no-repeat center bottom;
@@ -140,6 +143,7 @@ header{
 }
 .section__imglogo{
 	width: 30%;
+	max-width: 400px;
 	height: 250px;
 	background: url(Assets/HomeCinza.svg) no-repeat center bottom;
 	background-size: 100%;
