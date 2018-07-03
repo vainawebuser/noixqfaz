@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700');
+
 *{margin: 0;}
 body{
 	
@@ -178,7 +180,7 @@ header{
 	margin-bottom: 20px;
 }
 main{
-	
+	position: relative;
 }
 .section__umgrupo{
 	height: 100vh;
@@ -374,21 +376,26 @@ main{
 /*footer Vai na Web */
 
 .vnw{ 
+	width: 100%;
     height: 40px;
 	background: #f16337;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
 }
 .vnw__text{
-    font-family: 'filson-soft', sans-serif;
-	font-style: normal;
+	font-family: 'Source Code Pro', monospace;
 	font-weight: 500;
 	font-size: 16px;
     color: #30368c;
 }
 .vnw__link{
+	font-weight: 700;
     color: #30368c;
 }
 @media (max-width: 768px){
